@@ -2,7 +2,7 @@
 /**
  * model for events
  *
- * @copyright Md Fahim Uddin <visionq9@gmail.com>
+ * @author Md Fahim Uddin <visionq9@gmail.com>
  */
 declare(strict_types=1);
 

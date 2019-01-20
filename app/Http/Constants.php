@@ -2,7 +2,7 @@
 /**
  * holds all general purpose global constants
  *
- * @copyright Md Fahim Uddin <visionq9@gmail.com>
+ * @author Md Fahim Uddin <visionq9@gmail.com>
  */
 
 namespace App\Http;

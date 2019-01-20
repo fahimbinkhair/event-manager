@@ -1,22 +1,22 @@
 version: '3'
 
 services:
-  vdubuntu1604:
+  emubuntu1604:
     build:
       context: ./ubuntu
     volumes:
-      - ../:/var/www/html/vdnotes
+      - ../:/var/www/html/eventm
     ports:
       - "8081:80"
       - "444:443"
-  vdmysql:
+  emmysql:
     image: mysql:5.7.24
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: vdnotes
-      MYSQL_USER: vdnotesu
-      MYSQL_PASSWORD: vdnotesp
+      MYSQL_DATABASE: eventm
+      MYSQL_USER: eventmu
+      MYSQL_PASSWORD: eventmp
     ports:
       - "42334:3306"

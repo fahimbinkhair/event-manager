@@ -42,18 +42,18 @@ RUN update-alternatives --set php /usr/bin/php7.3
 RUN apt-get install -y rsyslog \
     apache2
 
-COPY vdnotes.di.conf /etc/apache2/sites-available/
+COPY eventm.zit.conf /etc/apache2/sites-available/
 
 RUN a2enmod rewrite
 RUN a2enmod headers
 RUN a2dissite 000-default
-RUN a2ensite vdnotes.di.conf
+RUN a2ensite eventm.zit.conf
 
 #add user
-RUN groupadd vdnotes
-RUN useradd --create-home --shell /bin/bash  -g vdnotes vdnotes
-RUN usermod -a -G sudo vdnotes
-RUN echo '%vdnotes ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+RUN groupadd eventm
+RUN useradd --create-home --shell /bin/bash  -g eventm eventm
+RUN usermod -a -G sudo eventm
+RUN echo '%eventm ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN newgrp sudo
 
 #install composer
