@@ -13,7 +13,7 @@ The instruction given her is based on Ubuntu 16.04
 1) run **sudo vim /etc/hosts** and add **127.0.0.1 eventm.zit** in the host list
 2) cd /into/event-manager/docker
 3) run **docker-compose build** (for the first time only)
-4) run **docker-compose up** and wait for something like
+4) run **docker-compose up -d** and wait for something like
 
     Creating docker_emubuntu1604_1_264e8608433b ... done
     
