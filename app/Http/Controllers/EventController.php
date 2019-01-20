@@ -2,7 +2,7 @@
 /**
  * controls all activities related to the event e.g. add event, view events, etc
  *
- * @copyright Md Fahim Uddin <visionq9@gmail.com>
+ * @author Md Fahim Uddin <visionq9@gmail.com>
  */
 declare(strict_types=1);
 

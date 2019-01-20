@@ -1,7 +1,7 @@
 {{--
 the form to add a new form
 
-@copyright Md Fahim Uddin <visionq9@gmail.com>
+@author Md Fahim Uddin <visionq9@gmail.com>
 --}}
 
 @extends('template.master')

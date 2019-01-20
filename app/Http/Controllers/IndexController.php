@@ -2,7 +2,7 @@
 /**
  * controls the behaviour of the home page
  *
- * @copyright Md Fahim Uddin <visionq9@gmail.com>
+ * @author Md Fahim Uddin <visionq9@gmail.com>
  */
 declare(strict_types=1);
 
@@ -19,6 +19,6 @@ class IndexController extends Controller
      */
     public function sayWelcome(): View
     {
-        return view('index.welcome', ['message' => 'Welcome to VD note management solution']);
+        return view('index.welcome', ['message' => 'Welcome to Event Manager']);
     }
 }
