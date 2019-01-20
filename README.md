@@ -1,15 +1,15 @@
-# event-manager
+# Event Manager
 A simple dockerized laravel application to add, edit, view, archive and delete events with phpunit and feature test
 
-#How to start
+# How to start
 The instruction given her is based on Ubuntu 16.04 
 
-##Dependencies
+## Dependencies
 1) Docker
 2) Docker-compose
 3) Internet connection
 
-##Setup docker container
+## Setup docker container
 1) sudo vim /etc/hosts and add 127.0.0.1 eventm.zit in the host list
 2) cd /into/event-manager/docker
 3) run docker-compose build (for the first time only)
@@ -34,7 +34,7 @@ The instruction given her is based on Ubuntu 16.04
 10) run vendor/bin/phpunit and you should see something like **OK (5 tests, 5 assertions)**
 11) open http://eventm.zit:8081 in the browser and you should see the welcome page
 
-##Error handling
+## Error handling
 Please run **sudo chmod -R 0777 /var/www/html/eventm/storage** if you see the error below
 
 UnexpectedValueException
